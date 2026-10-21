@@ -1,0 +1,25 @@
+{
+  "name": "chalkfall",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Chalkfall — a chalkboard demolition puzzle game.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "solve": "tsx tools/solve.ts",
+    "check": "tsx tools/check.ts",
+    "test": "tsx tools/test.ts"
+  },
+  "dependencies": {
+    "pixi.js": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}

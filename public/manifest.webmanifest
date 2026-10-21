@@ -1,0 +1,18 @@
+{
+  "name": "Chalkfall",
+  "short_name": "Chalkfall",
+  "description": "A demolition puzzle on the chalkboard. Place the charges, hit the plunger, bring it down.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#14261c",
+  "theme_color": "#14261c",
+  "categories": ["games", "puzzle"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

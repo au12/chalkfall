@@ -1,0 +1,8 @@
+services:
+  chalkfall:
+    build: .
+    # or use the image published by the GitHub workflow:
+    # image: ghcr.io/<your-github-user>/chalkfall:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped

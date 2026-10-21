@@ -1,0 +1,675 @@
+{
+ "1-1": {
+  "passLine": 6,
+  "goldLine": 5,
+  "par": 2,
+  "best": 4.1,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 1,
+    "local": 2.55,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "charge",
+    "piece": 2,
+    "local": -4.05,
+    "fuse": 0,
+    "dir": 0.7853981633974483
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-2": {
+  "passLine": 7,
+  "goldLine": 5.5,
+  "par": 1,
+  "best": 4.59,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 3,
+    "local": 2.4675,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-3": {
+  "passLine": 7,
+  "goldLine": 6,
+  "par": 1,
+  "best": 4.98,
+  "solution": [
+   {
+    "kind": "blaster",
+    "piece": 8,
+    "local": 1.04,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-4": {
+  "passLine": 7,
+  "goldLine": 6,
+  "par": 2,
+  "best": 5.99,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 9,
+    "local": -9.05,
+    "fuse": 0,
+    "dir": 0.7853981633974483
+   },
+   {
+    "kind": "charge",
+    "piece": 3,
+    "local": 2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-5": {
+  "passLine": 6,
+  "goldLine": 5,
+  "par": 1,
+  "best": 4.3,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 5,
+    "local": -0.9799999999999999,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-6": {
+  "passLine": 5,
+  "goldLine": 3,
+  "par": 1,
+  "best": 2.02,
+  "solution": [
+   {
+    "kind": "blaster",
+    "piece": 9,
+    "local": -6.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-7": {
+  "passLine": 7,
+  "goldLine": 6,
+  "par": 1,
+  "best": 5.54,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 1,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "1-8": {
+  "passLine": 7,
+  "goldLine": 5.5,
+  "par": 1,
+  "best": 4.4,
+  "solution": [
+   {
+    "kind": "blaster",
+    "piece": 9,
+    "local": 2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-1": {
+  "passLine": 6,
+  "goldLine": 4.5,
+  "par": 1,
+  "best": 3.72,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 3,
+    "local": -6.05,
+    "fuse": 0,
+    "dir": 3.141592653589793
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-2": {
+  "passLine": 7,
+  "goldLine": 5,
+  "par": 1,
+  "best": 4.01,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 2,
+    "local": -3.05,
+    "fuse": 0,
+    "dir": 3.141592653589793
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-3": {
+  "passLine": 7,
+  "goldLine": 6,
+  "par": 1,
+  "best": 5.01,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 3,
+    "local": -6.05,
+    "fuse": 0,
+    "dir": 3.141592653589793
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-4": {
+  "passLine": 8,
+  "goldLine": 6.5,
+  "par": 1,
+  "best": 5.66,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 4,
+    "local": 9.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-5": {
+  "passLine": 10,
+  "goldLine": 9,
+  "par": 2,
+  "best": 7.89,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 1,
+    "local": 1.55,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "charge",
+    "piece": 6,
+    "local": -1.55,
+    "fuse": 0.5,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-6": {
+  "passLine": 9,
+  "goldLine": 8,
+  "par": 1,
+  "best": 6.85,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 7,
+    "local": 0.7174999999999999,
+    "fuse": 0,
+    "dir": 3.141592653589793
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-7": {
+  "passLine": 7,
+  "goldLine": 5.5,
+  "par": 4,
+  "best": 4.72,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 0,
+    "local": 0,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "charge",
+    "piece": 11,
+    "local": 0,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "kicker",
+    "piece": 7,
+    "local": 0,
+    "fuse": 0.5,
+    "dir": 3.141592653589793
+   },
+   {
+    "kind": "kicker",
+    "piece": 16,
+    "local": 0,
+    "fuse": 0.5,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "2-8": {
+  "passLine": 9,
+  "goldLine": 7.5,
+  "par": 1,
+  "best": 6.63,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 1,
+    "local": 2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-1": {
+  "passLine": 4,
+  "goldLine": 3,
+  "par": 1,
+  "best": 2.02,
+  "solution": [
+   {
+    "kind": "cutter",
+    "piece": 0,
+    "local": 5.55,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-2": {
+  "passLine": 6,
+  "goldLine": 5,
+  "par": 1,
+  "best": 3.75,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 7,
+    "local": 7.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-3": {
+  "passLine": 8,
+  "goldLine": 7,
+  "par": 1,
+  "best": 6,
+  "solution": [
+   {
+    "kind": "cutter",
+    "piece": 1,
+    "local": -3.55,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-4": {
+  "passLine": 7,
+  "goldLine": 5.5,
+  "par": 1,
+  "best": 4.73,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 13,
+    "local": -1.55,
+    "fuse": 0,
+    "dir": 3.141592653589793
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-5": {
+  "passLine": 7,
+  "goldLine": 6,
+  "par": 1,
+  "best": 4.87,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 8,
+    "local": 1.3,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-6": {
+  "passLine": 6,
+  "goldLine": 5,
+  "par": 1,
+  "best": 4.3,
+  "solution": [
+   {
+    "kind": "cutter",
+    "piece": 4,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-7": {
+  "passLine": 7,
+  "goldLine": 6,
+  "par": 1,
+  "best": 4.76,
+  "solution": [
+   {
+    "kind": "cutter",
+    "piece": 1,
+    "local": 1.55,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "3-8": {
+  "passLine": 8,
+  "goldLine": 6,
+  "par": 1,
+  "best": 5.02,
+  "solution": [
+   {
+    "kind": "blaster",
+    "piece": 10,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-1": {
+  "passLine": 6,
+  "goldLine": 5,
+  "par": 2,
+  "best": 4.47,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 3,
+    "local": 2.1174999999999997,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "charge",
+    "piece": 1,
+    "local": 2.05,
+    "fuse": 0.5,
+    "dir": 3.141592653589793
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-2": {
+  "passLine": 9,
+  "goldLine": 8,
+  "par": 5,
+  "best": 8.3,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 12,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "charge",
+    "piece": 22,
+    "local": -2,
+    "fuse": 0.5,
+    "dir": 2.356194490192345
+   },
+   {
+    "kind": "imploder",
+    "piece": 5,
+    "local": 0.7174999999999999,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "charge",
+    "piece": 3,
+    "local": 0.7174999999999999,
+    "fuse": 0.5,
+    "dir": 0.7853981633974483
+   },
+   {
+    "kind": "charge",
+    "piece": 8,
+    "local": -0.7174999999999999,
+    "fuse": 0.5,
+    "dir": 0.7853981633974483
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-3": {
+  "passLine": 10,
+  "goldLine": 9,
+  "par": 2,
+  "best": 7.81,
+  "solution": [
+   {
+    "kind": "imploder",
+    "piece": 18,
+    "local": -1.0675,
+    "fuse": 0.5,
+    "dir": 0.7853981633974483
+   },
+   {
+    "kind": "charge",
+    "piece": 3,
+    "local": 2.05,
+    "fuse": 0,
+    "dir": 0.7853981633974483
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-4": {
+  "passLine": 10,
+  "goldLine": 7,
+  "par": 1,
+  "best": 5.82,
+  "solution": [
+   {
+    "kind": "cutter",
+    "piece": 0,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-5": {
+  "passLine": 14,
+  "goldLine": 13,
+  "par": 4,
+  "best": 11.65,
+  "solution": [
+   {
+    "kind": "kicker",
+    "piece": 11,
+    "local": -4.2175,
+    "fuse": 0,
+    "dir": 0
+   },
+   {
+    "kind": "imploder",
+    "piece": 14,
+    "local": 2.05,
+    "fuse": 0,
+    "dir": 0.7853981633974483
+   },
+   {
+    "kind": "charge",
+    "piece": 8,
+    "local": -2.05,
+    "fuse": 1,
+    "dir": 3.141592653589793
+   },
+   {
+    "kind": "charge",
+    "piece": 7,
+    "local": 0,
+    "fuse": 0,
+    "dir": 2.356194490192345
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-6": {
+  "passLine": 6,
+  "goldLine": 5,
+  "par": 1,
+  "best": 4.79,
+  "solution": [
+   {
+    "kind": "cutter",
+    "piece": 0,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-7": {
+  "passLine": 12,
+  "goldLine": 11,
+  "par": 1,
+  "best": 10.5,
+  "solution": [
+   {
+    "kind": "charge",
+    "piece": 5,
+    "local": 0.7174999999999999,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ },
+ "4-8": {
+  "passLine": 20,
+  "goldLine": 19,
+  "par": 9,
+  "best": 18.03,
+  "solution": [
+   {
+    "kind": "imploder",
+    "piece": 11,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 3.141592653589793
+   },
+   {
+    "kind": "cutter",
+    "piece": 39,
+    "local": -2.05,
+    "fuse": 0,
+    "dir": 2.356194490192345
+   },
+   {
+    "kind": "blaster",
+    "piece": 7,
+    "local": -2.05,
+    "fuse": 1,
+    "dir": 2.356194490192345
+   },
+   {
+    "kind": "imploder",
+    "piece": 4,
+    "local": -9.05,
+    "fuse": 1,
+    "dir": 2.356194490192345
+   },
+   {
+    "kind": "cutter",
+    "piece": 33,
+    "local": -0.7174999999999999,
+    "fuse": 1,
+    "dir": 3.141592653589793
+   },
+   {
+    "kind": "charge",
+    "piece": 7,
+    "local": 0.7174999999999999,
+    "fuse": 1,
+    "dir": 3.141592653589793
+   },
+   {
+    "kind": "kicker",
+    "piece": 5,
+    "local": 0.7174999999999999,
+    "fuse": 0.5,
+    "dir": 3.141592653589793
+   },
+   {
+    "kind": "charge",
+    "piece": 17,
+    "local": -0.7174999999999999,
+    "fuse": 1,
+    "dir": 0
+   },
+   {
+    "kind": "cutter",
+    "piece": 42,
+    "local": 0.7174999999999999,
+    "fuse": 0,
+    "dir": 0
+   }
+  ],
+  "bonusFeasible": true
+ }
+}
