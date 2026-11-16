@@ -1,4 +1,5 @@
 // The game screen: plan charges, detonate, watch it fall, score it.
+import { arcade } from '../arcade.ts';
 import { Sim, type Charge, type Placement, type SimResult } from '../game/sim.ts';
 import { CHARGES, CHARGE_ORDER, FUSES, MATERIALS, PHYS_HZ, type ChargeKind } from '../game/constants.ts';
 import type { LevelDef } from '../game/level.ts';
@@ -49,6 +50,7 @@ export class PlayScreen implements Screen {
   // ------------------------------------------------------------------ lifecycle
 
   enter(): void {
+    arcade.status('playing');
     const app = this.app, scene = app.scene;
     this.sim = new Sim(this.level, {
       pieceAdded: (p) => scene.addPiece(p),
@@ -90,6 +92,7 @@ export class PlayScreen implements Screen {
   }
 
   exit(): void {
+    arcade.status('menu');
     for (const [t, ev, fn, o] of this.handlers) t.removeEventListener(ev, fn, o);
     this.handlers = [];
     this.hud.remove();
@@ -324,6 +327,13 @@ export class PlayScreen implements Screen {
     const app = this.app, L = this.level;
     const rec = this.replay ? null : app.save.record(L.id, r.stars, r.score);
     const nStars = r.stars.filter(Boolean).length;
+    // A cleared site earns arcade tickets; the stars and the best scores go on its leaderboards.
+    arcade.status('over');
+    if (!this.replay && r.cleared) {
+      void arcade.score(r.score, { board: 'level', meta: { level: L.id, stars: nStars } });
+      void arcade.score(app.save.total(), { board: 'stars' });
+      void arcade.score(app.save.bestTotal(), { board: 'total' });
+    }
     if (r.cleared) { app.audio.win(nStars); this.app.scene.setForeman('cheer'); this.app.scene.fx.dust(this.app.scene.cam.x, L.passLine + 4, 3, 0); }
     else { app.audio.lose(); this.app.scene.setForeman('oops'); }
     r.stars.forEach((s, i) => this.goalEls[i].classList.toggle('ok', s));

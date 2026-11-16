@@ -13,6 +13,7 @@ import { TitleScreen } from './screens/title.ts';
 import { LevelsScreen } from './screens/levels.ts';
 import { showSettings } from './screens/settings.ts';
 import type { Placement } from './game/sim.ts';
+import { arcade, arcadePlayer } from './arcade.ts';
 
 export interface Screen { enter(): void; exit(): void; frame(dt: number): void }
 
@@ -27,11 +28,16 @@ export class App {
   screen: Screen | null = null;
 
   async start(): Promise<void> {
-    await Promise.all([
+    const [, , , player] = await Promise.all([
       initPhysics({ wasmUrl }),
       document.fonts.load("700 40px 'Cabin Sketch'"),
       document.fonts.load("40px 'Architects Daughter'"),
+      arcadePlayer(),
     ]);
+    // In the arcade, each player keeps their own stars.
+    if (player) this.save = new Save(arcade.storageKey('chalkfall.v1'));
+    // The arcade's menu pauses a level, like the pause button.
+    arcade.on('pause', () => { if (this.screen instanceof PlayScreen) this.screen.pause(); });
     this.pixi = new Application();
     await this.pixi.init({
       resizeTo: window, background: '#14261c', antialias: true, autoDensity: true,

@@ -5,4 +5,8 @@ services:
     # image: ghcr.io/<your-github-user>/chalkfall:latest
     ports:
       - "8080:80"
+    environment:
+      # Show this game in the au12 Arcade and send it the scores (see README),
+      # e.g. "https://arcade.example.com". Empty: no arcade.
+      ARCADE_URL: ""
     restart: unless-stopped
