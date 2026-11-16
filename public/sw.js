@@ -22,6 +22,7 @@ self.addEventListener('fetch', (e) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
+  if (url.pathname === '/arcade.json') return; // where the arcade is: always ask the server
 
   if (req.mode === 'navigate') {
     e.respondWith(

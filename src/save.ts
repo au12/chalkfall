@@ -18,17 +18,19 @@ const DEFAULTS: Settings = { sfx: 0.9, music: 0.5, shake: true, hints: true };
 
 export class Save {
   d: Data;
-  constructor() {
+  // `key` is per player inside the arcade ("chalkfall.v1@<player>"); a new
+  // player starts with no stars but this device's settings.
+  constructor(readonly key: string = KEY) {
     this.d = { v: 1, stars: {}, best: {}, settings: { ...DEFAULTS }, seen: {} };
     try {
-      const raw = localStorage.getItem(KEY);
+      const raw = localStorage.getItem(key) ?? (key !== KEY ? JSON.stringify({ settings: JSON.parse(localStorage.getItem(KEY) || '{}').settings || {} }) : null);
       if (raw) {
         const p = JSON.parse(raw);
         this.d = { ...this.d, ...p, settings: { ...DEFAULTS, ...(p.settings || {}) } };
       }
     } catch { /* storage blocked: play without saving */ }
   }
-  write(): void { try { localStorage.setItem(KEY, JSON.stringify(this.d)); } catch { /* ignore */ } }
+  write(): void { try { localStorage.setItem(this.key, JSON.stringify(this.d)); } catch { /* ignore */ } }
 
   get settings(): Settings { return this.d.settings; }
   set(k: keyof Settings, v: Settings[keyof Settings]): void { (this.d.settings as any)[k] = v; this.write(); }
@@ -36,6 +38,8 @@ export class Save {
   stars(id: string): [boolean, boolean, boolean] { return this.d.stars[id] ?? [false, false, false]; }
   starCount(id: string): number { return this.stars(id).filter(Boolean).length; }
   total(): number { return LEVELS.reduce((s, l) => s + this.starCount(l.id), 0); }
+  /** The best scores of every level, added up. */
+  bestTotal(): number { return LEVELS.reduce((s, l) => s + (this.d.best[l.id] ?? 0), 0); }
   worldStars(w: number): number { return LEVELS.filter((l) => l.world === w).reduce((s, l) => s + this.starCount(l.id), 0); }
   worldUnlocked(w: number): boolean { const info = WORLDS[w - 1]; return !!info && this.total() >= info.unlock; }
   levelUnlocked(id: string): boolean {

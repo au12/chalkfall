@@ -89,6 +89,19 @@ npm test             # every level stands at rest and its stored solution still 
 npm run check        # per-level stability, start heights, piece counts
 ```
 
+## In the arcade
+
+Chalkfall can run inside the [au12 Arcade](https://github.com/au12/arcade), the family launcher that puts every game behind one installable app, with shared players and high scores across the games (and a real cabinet, if you build one).
+
+Set `ARCADE_URL` on the container to the arcade's address, for example `https://arcade.example.com`. Then:
+
+- Inside the arcade, Chalkfall plays as the arcade's player: each family member keeps their own stars and best scores (settings carry over from the device).
+- Every cleared site earns arcade tickets for its score, and the star count and the total of best scores go on the arcade's Chalkfall leaderboards and count toward achievements.
+- Opening the arcade's menu (the cabinet's menu button, or F9) pauses the level.
+- Played on its own rather than inside the arcade, the game still sends results to the arcade for whoever that browser last played as there. At start, the container writes `/arcade.json` with the address, which is how the game finds it.
+
+With `ARCADE_URL` empty, nothing changes.
+
 ## How it's built
 
 - **Physics:** [Box2D v3.2](https://github.com/erincatto/box2d) compiled to WebAssembly with a small
